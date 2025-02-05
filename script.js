@@ -123,34 +123,32 @@ function openModal(project) {
     modal.style.display = 'block';
 }
 
-// Close modal
 function closeModal() {
     const modal = document.getElementById('project-modal');
     modal.style.display = 'none';
 }
 
-// Show specific section
 function showContent(section) {
     if (section === 'about') {
         dynamicSection.innerHTML = `
             <h2>About Me</h2>
             <div class="content">
-    <p>
-        Ever wondered what would happen if you gave your data a voice? Let me amplify it, decode its story, and unlock insights that could elevate your business.
-    </p>
-    <p>
-        I’m Sofi Khachatryan, a dynamic blend of diverse skills and passions. I mix technical expertise with creative problem-solving, leadership with strategic thinking, and curiosity with a relentless drive to learn. I’m not just about crunching numbers—I transform data into a powerful tool that shapes decisions, drives growth, and inspires innovation.
-    </p>
-    <p>
-        With a mindset that thrives on turning complexity into clarity, I approach every project with an eye for the big picture and the details. Whether it’s building interactive dashboards, leading a team, or planning future steps, I bring a unique perspective that connects the dots between data and meaningful action.
-    </p>
-    <p>
-        I’m always growing, always exploring new ways to look at problems, and always ready to tackle the next challenge head-on. Ready to see what your data can truly do? Let’s make it happen.
-    </p>
-    <p>
-        <strong>Explore my projects below and download my CV to see how I can bring value to your team.</strong>
-    </p>
-</div>
+                <p>
+                    Ever wondered what would happen if you gave your data a voice? Let me amplify it, decode its story, and unlock insights that could elevate your business.
+                </p>
+                <p>
+                    I’m Sofi Khachatryan, a dynamic blend of diverse skills and passions. I mix technical expertise with creative problem-solving, leadership with strategic thinking, and curiosity with a relentless drive to learn. I’m not just about crunching numbers—I transform data into a powerful tool that shapes decisions, drives growth, and inspires innovation.
+                </p>
+                <p>
+                    With a mindset that thrives on turning complexity into clarity, I approach every project with an eye for the big picture and the details. Whether it’s building interactive dashboards, leading a team, or planning future steps, I bring a unique perspective that connects the dots between data and meaningful action.
+                </p>
+                <p>
+                    I’m always growing, always exploring new ways to look at problems, and always ready to tackle the next challenge head-on. Ready to see what your data can truly do? Let’s make it happen.
+                </p>
+                <p>
+                    <strong>Explore my projects below and download my CV to see how I can bring value to your team.</strong>
+                </p>
+            </div>
         `;
     } else if (section === 'resume') {
         dynamicSection.innerHTML = `
@@ -173,7 +171,7 @@ function showContent(section) {
                             <li>Developing and delivering interactive dashboards and reports, providing real-time insights for decision-making.</li>
                             <li>Researching and applying advanced analytics tools and methods to identify trends and optimize business performance.</li>
                             <li>Collaborating with cross-functional teams to define business metrics, ensuring alignment with organizational goals.</li>
-                            <li>Writing detailed technical documentations to communicateacross team members</li>
+                            <li>Writing detailed technical documentation to communicate across team members.</li>
                         </ul>
                     </div>
                     <div class="timeline-item">
@@ -203,25 +201,6 @@ function showContent(section) {
                         <div class="skill-bar"><span style="width: 70%;"></span></div>
                     </div>
                 </div>
-                <h3>Certifications</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Data Analyst Associate</h4>
-                        <p>DataCamp, 2024</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Machine Learning Specialization</h4>
-                        <p>Coursera, Present</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Data Analyst Bootcamp</h4>
-                        <p>Alexander Freberg, 2023</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>SQL for Data Science</h4>
-                        <p>GreatLearning Academy, 2023</p>
-                    </div>
-                </div>
             </div>
         `;
     } else if (section === 'portfolio') {
@@ -230,3 +209,4 @@ function showContent(section) {
 }
 
 showContent('about');
+
