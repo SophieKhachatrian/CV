@@ -4,7 +4,7 @@ const projects = [
     {
         title: "Customer Segmentation",
         images: ["17.png"],
-        description: "This project transforms transactional data into a customer-centric dataset, applying K-Means for customer segmentation and Isolation Forest for outlier detection.",
+        description: "Project transforms transactional data into a customer-centric dataset, applying K-Means for customer segmentation and Isolation Forest for outlier detection.",
         category: "Python",
         link: "https://github.com/SophieKhachatrian/Customer-Segmentation/blob/main/Customer%20Segmentation.ipynb"
     },
