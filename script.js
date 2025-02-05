@@ -1,7 +1,13 @@
 const dynamicSection = document.getElementById('dynamic-section');
 
-// Projects data for portfolio
 const projects = [
+    {
+        title: "Customer Segmentation",
+        images: ["17.png"],
+        description: "This project transforms transactional data into a customer-centric dataset, applying K-Means for customer segmentation and Isolation Forest for outlier detection.",
+        category: "Python",
+        link: "https://github.com/SophieKhachatrian/Customer-Segmentation/blob/main/Customer%20Segmentation.ipynb"
+    },
     {
         title: "Process Performance Dashboard",
         images: ["2.png"],
@@ -18,21 +24,21 @@ const projects = [
     },
     {
         title: "YouTube Video Statistics ",
-        images: ["11.jpeg"], // Add multiple images
+        images: ["11.jpeg"], 
         description: "The project aims to gain insights into the factors affecting a videos popularity and whether these aspects differ across videos. This understanding can enable content creators and YouTube channel owners to optimize their video content and enhance their performance on the platform.",
         category: "Python",
         link: "https://github.com/SophieKhachatrian/Python-Project-Youtube-Analysis/blob/main/Final_project.ipynb"
     },
     {
         title: "Sport App Creation & Analysis",
-        images: ["12.jpg"], // Add multiple images
+        images: ["12.jpg"],
         description: "A comprehensive dashboard for analyzing social media data, including sentiment distribution, engagement metrics, and trend analysis.",
         category: "SQL",
         link: "https://github.com/SophieKhachatrian/SQL-SportApp-Project"
     },
     {
         title: "E-Commerce Sales Analysis Dashboard",
-        images: ["13.png"], // Add multiple images
+        images: ["13.png"],
         description: "An insightful dashboard for analyzing e-commerce performance, including KPIs, customer segmentation, seasonal trends, and category-wise sales.",
         category: "R",
         link: "https://github.com/SophieKhachatrian/R-Project-Political-Events"
@@ -54,7 +60,6 @@ const projects = [
     }
 ];
 
-// Render portfolio with optional filter
 function renderPortfolio(filter = "All") {
     let filteredProjects = projects;
     if (filter !== "All") {
@@ -101,7 +106,6 @@ function renderPortfolio(filter = "All") {
     `;
 }
 
-// Open modal for projects without links
 function openModal(project) {
     const modal = document.getElementById('project-modal');
     const modalTitle = document.getElementById('modal-title');
@@ -225,5 +229,4 @@ function showContent(section) {
     }
 }
 
-// Load default content
 showContent('about');
