@@ -39,7 +39,7 @@ const projects = [
     {
         title: "Sport App Creation & Analysis",
         images: ["12.jpg"],
-        description: "A comprehensive dashboard for analyzing social media data, including sentiment distribution, engagement metrics, and trend analysis.",
+        description: "SQL project for a sports app, creating and analyzing data through complex queries to perform in-depth analyses.",
         category: "SQL",
         link: "https://github.com/SophieKhachatrian/SQL-SportApp-Project"
     },
