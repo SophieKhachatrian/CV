@@ -22,6 +22,13 @@ const projects = [
         category: "Power BI",
         link: ""
     },
+     {
+        title: "Sales & Customers",
+        images: ["19.png"],
+        description: "SQL queries to analyze sales and customer data, uncover trends, and provide business insights",
+        category: "SQL",
+        link: "https://github.com/SophieKhachatrian/SQL-Sales-and-Customer"
+    },
     {
         title: "YouTube Video Statistics ",
         images: ["11.jpeg"], 
