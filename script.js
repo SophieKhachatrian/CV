@@ -44,9 +44,9 @@ const projects = [
         link: "https://github.com/SophieKhachatrian/SQL-SportApp-Project"
     },
     {
-        title: "E-Commerce Sales Analysis Dashboard",
+        title: "Analysis of Political Events",
         images: ["13.png"],
-        description: "An insightful dashboard for analyzing e-commerce performance, including KPIs, customer segmentation, seasonal trends, and category-wise sales.",
+        description:  "R project explores political events in Armenia from 2018 to 2024, analyzing trends, regional patterns, and the intensity of events through data visualization and statistical techniques.",
         category: "R",
         link: "https://github.com/SophieKhachatrian/R-Project-Political-Events"
     },
