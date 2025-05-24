@@ -11,7 +11,7 @@ const projects = [
      {
         title: "Animal Image Classifier with CNN & Transfer Learning",
         images: ["41.png"],
-        description: "*A deep learning project for animal image classification using a custom CNN. Also explores transfer learning techniques, with custom preprocessing, data augmentation, and evaluation to enhance performance.",
+        description: "A deep learning project for animal image classification using a custom CNN. Also explores transfer learning techniques, with custom preprocessing, data augmentation, and evaluation to enhance performance.",
         category: "Python",
         link: "https://github.com/SophieKhachatrian/animal-classifier"
     },
