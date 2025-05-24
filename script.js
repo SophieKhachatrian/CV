@@ -8,6 +8,13 @@ const projects = [
         category: "Python",
         link: "https://github.com/SophieKhachatrian/Customer-Segmentation/blob/main/Customer%20Segmentation.ipynb"
     },
+     {
+        title: "Animal Image Classifier with CNN & Transfer Learning",
+        images: ["41.png"],
+        description: "*A deep learning project for animal image classification using a custom CNN. Also explores transfer learning techniques, with custom preprocessing, data augmentation, and evaluation to enhance performance.",
+        category: "Python",
+        link: "https://github.com/SophieKhachatrian/animal-classifier"
+    },
     {
         title: "Process Performance Dashboard",
         images: ["2.png"],
