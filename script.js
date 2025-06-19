@@ -23,10 +23,24 @@ const projects = [
         link: ""
     },
     {
+        title: "SQL Agent",
+        images: ["25.png"],
+        description: "The agent understands natural language questions, creates simple SQL queries to fetch the data, executes them, and delivers the answers in clear, easy-to-understand language.",
+        category: "AI Agents",
+        link: ""
+    },
+    {
         title: "Performance Dashboard",
         images: ["4.png"],
         description: "Monitors resolution times, issue delays, and task completion. Key insights include breached vs. achieved tasks, component distribution, and assignee performance to enhance support efficiency.",
         category: "Power BI",
+        link: ""
+    },
+    {
+        title: "Reviews Sentiment Analysis Agent",
+        images: ["55.png"],
+        description: "This AI agent pulls customer reviews from Google Maps for a user-specified location (e.g., a restaurant, store, or salon) and performs aspect-based sentiment analysis. It breaks down public opinion across key dimensions like service, quality, pricing, and more.",
+        category: "AI Agent",
         link: ""
     },
      {
@@ -35,6 +49,13 @@ const projects = [
         description: "SQL queries to analyze sales and customer data, uncover trends, and provide business insights",
         category: "SQL",
         link: "https://github.com/SophieKhachatrian/SQL-Sales-and-Customer"
+    },
+    {
+        title: "Product Tracker Agent",
+        images: ["45.png"],
+        description: "This AI agent takes a user-defined product category (e.g., “cars” or “houses”), scrapes relevant data like pricing, features, and instantly exports the information into Google Sheets.",
+        category: "AI Agent",
+        link: ""
     },
     {
         title: "YouTube Video Statistics ",
@@ -86,8 +107,10 @@ function renderPortfolio(filter = "All") {
             <button onclick="renderPortfolio('All')">All</button>
             <button onclick="renderPortfolio('Python')">Python</button>
             <button onclick="renderPortfolio('Power BI')">Power BI</button>
+            <button onclick="renderPortfolio('AI Agents')">AI Agents</button>
             <button onclick="renderPortfolio('SQL')">SQL</button>
             <button onclick="renderPortfolio('R')">R</button>
+            
         </div>
         <div class="portfolio">
             ${filteredProjects
