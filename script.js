@@ -109,12 +109,11 @@ function renderPortfolio(filter = "All") {
             <button onclick="renderPortfolio('AI Agents')">AI Agents</button>
             <button onclick="renderPortfolio('SQL')">SQL</button>
             <button onclick="renderPortfolio('R')">R</button>
-            
         </div>
         <div class="portfolio">
             ${filteredProjects
                 .map(
-                    (project, index) => `
+                    (project) => `
                 <div class="portfolio-item">
                     <div class="slider-container">
                         <div class="slider">
@@ -128,11 +127,7 @@ function renderPortfolio(filter = "All") {
                     <div class="content">
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
-                        <a href="#" onclick="${
-                            project.link
-                                ? `window.open('${project.link}', '_blank')`
-                                : `openModal(projects[${index}])`
-                        }">View Project</a>
+                        <a href="#" class="view-project" data-title="${project.title}">View Project</a>
                     </div>
                 </div>
             `
@@ -140,7 +135,21 @@ function renderPortfolio(filter = "All") {
                 .join("")}
         </div>
     `;
+
+    document.querySelectorAll('.view-project').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const title = this.getAttribute('data-title');
+            const project = projects.find(p => p.title === title);
+            if (project.link) {
+                window.open(project.link, '_blank');
+            } else {
+                openModal(project);
+            }
+        });
+    });
 }
+
 
 function openModal(project) {
     const modal = document.getElementById('project-modal');
