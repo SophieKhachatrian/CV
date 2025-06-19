@@ -148,16 +148,10 @@ function showContent(section) {
             <h2>About Me</h2>
             <div class="content">
                 <p>
-                    Ever wondered what would happen if you gave your data a voice? Let me amplify it, decode its story, and unlock insights that could elevate your business.
+                    I’m Sofi Khachatryan, a data analyst blending analytics with a growing focus on AI. I help teams move from raw data to real clarity—building tools and insights that turn complexity into direction.
                 </p>
                 <p>
-                    I’m Sofi Khachatryan, a dynamic blend of diverse skills and passions. I mix technical expertise with creative problem-solving, leadership with strategic thinking, and curiosity with a relentless drive to learn. I’m not just about crunching numbers—I transform data into a powerful tool that shapes decisions, drives growth, and inspires innovation.
-                </p>
-                <p>
-                    With a mindset that thrives on turning complexity into clarity, I approach every project with an eye for the big picture and the details. Whether it’s building interactive dashboards, leading a team, or planning future steps, I bring a unique perspective that connects the dots between data and meaningful action.
-                </p>
-                <p>
-                    I’m always growing, always exploring new ways to look at problems, and always ready to tackle the next challenge head-on. Ready to see what your data can truly do? Let’s make it happen.
+                    My work lives at the intersection of analytics and innovation. It’s where dashboards become decision-making tools, and where curiosity drives new ideas forward. I’m always exploring new technologies, learning continuously, and adapting with purpose.
                 </p>
                 <p>
                     <strong>Explore my projects below and download my CV to see how I can bring value to your team.</strong>
