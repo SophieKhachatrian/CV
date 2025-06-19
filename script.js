@@ -38,7 +38,7 @@ const projects = [
     },
     {
         title: "Reviews Sentiment Analysis Agent",
-        images: ["55.png"],
+        images: ["55.jpg"],
         description: "This AI agent pulls customer reviews from Google Maps for a user-specified location (e.g., a restaurant, store, or salon) and performs aspect-based sentiment analysis. It breaks down public opinion across key dimensions like service, quality, pricing, and more.",
         category: "AI Agents",
         link: ""
@@ -52,10 +52,9 @@ const projects = [
     },
     {
         title: "Product Tracker Agent",
-        images: ["45.png"],
+        images: ["45.jpg"],
         description: "This AI agent takes a user-defined product category (e.g., “cars” or “houses”), scrapes relevant data like pricing, features, and instantly exports the information into Google Sheets.",
-        category: "AI Agents",
-        link: ""
+        category: "AI Agents"
     },
     {
         title: "YouTube Video Statistics ",
