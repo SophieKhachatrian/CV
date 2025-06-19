@@ -24,7 +24,7 @@ const projects = [
     },
     {
         title: "SQL Agent",
-        images: ["25.png"],
+        images: ["25.webp"],
         description: "The agent understands natural language questions, creates simple SQL queries to fetch the data, executes them, and delivers the answers in clear, easy-to-understand language.",
         category: "AI Agents",
         link: ""
