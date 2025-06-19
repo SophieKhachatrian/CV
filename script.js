@@ -100,6 +100,7 @@ function renderPortfolio(filter = "All") {
         filteredProjects = projects.filter(project => project.category === filter);
     }
 
+    // Save a snapshot of filteredProjects for event handler use
     dynamicSection.innerHTML = `
         <h2>Portfolio</h2>
         <div class="filters">
@@ -113,7 +114,7 @@ function renderPortfolio(filter = "All") {
         <div class="portfolio">
             ${filteredProjects
                 .map(
-                    (project) => `
+                    (project, index) => `
                 <div class="portfolio-item">
                     <div class="slider-container">
                         <div class="slider">
@@ -127,7 +128,7 @@ function renderPortfolio(filter = "All") {
                     <div class="content">
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
-                        <a href="#" class="view-project" data-title="${project.title}">View Project</a>
+                        <a href="#" class="view-project" data-index="${index}">View Project</a>
                     </div>
                 </div>
             `
@@ -136,11 +137,12 @@ function renderPortfolio(filter = "All") {
         </div>
     `;
 
+    // Attach event listeners using the current filteredProjects list
     document.querySelectorAll('.view-project').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
-            const title = this.getAttribute('data-title');
-            const project = projects.find(p => p.title === title);
+            const index = parseInt(this.getAttribute('data-index'));
+            const project = filteredProjects[index];
             if (project.link) {
                 window.open(project.link, '_blank');
             } else {
